@@ -1,0 +1,32 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Cadastro
+.select-sexo{
+    display: flex;
+    font-size: 15px;
+    select{
+        margin-left: 8px;
+        position: relative;
+        bottom: .1em;
+    }
+}
+.form-cadastro{
+    position: relative;
+    bottom: 1.5em;
+}
+.botao-user{
+    width: 15em;
+}
+// Show User
+
+.show-user{
+    position: relative;
+    bottom: .5em;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+

@@ -1,0 +1,11 @@
+<div class="row">
+  
+
+  <div class="col-md-6 col-md-offset-3 col-xs-12 form-cadastro">
+    <%= form_for current_user do |f| %>
+      <%= render 'form_edit', f: f %>
+
+      <%= f.submit 'Atualizar', class: 'btn btn-primary botao-user' %>
+    <% end %>
+  </div>
+</div>

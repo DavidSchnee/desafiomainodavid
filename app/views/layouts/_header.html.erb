@@ -1,0 +1,21 @@
+
+<header class='header'>
+    <%if !user_signed_in?%>        
+        <%= nav_bar brand: "Seja um Treinador", brand_link: root_url do %>
+            <%= menu_group do %>
+                <%= menu_item 'Nova Conta', new_user_path %>
+                <%= menu_item 'Entrar', entrar_path%>
+            <%end%>
+        <%end%>
+    <%end%>
+    <%if user_signed_in?%>
+        <%= nav_bar brand: "Meu Perfil", brand_link: current_user  do %>
+            <%= menu_group do %>
+                <%= menu_item 'Editar Perfil',  edit_user_path(current_user) %>
+                <%= menu_item 'Times',  equipes_path %>
+                <%= menu_item 'Sair',  sair_path, method: :delete %>
+            <%end%>
+        <%end%>
+    <%end%>
+</header>
+   

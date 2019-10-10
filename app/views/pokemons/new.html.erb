@@ -1,0 +1,10 @@
+<div class='new-pokemon'>
+    <h1>Adicionar Pokemon</h1>
+    <%= form_for @pokemon do |form|%>
+        <%= form.label :nome_do_pokemon%>
+        <%= form.text_field :nome, class:'form-control'%>
+        <%= form.label :Selecione_o_time%>
+        <%= form.collection_select :equipe_id, @equipes, :id, :nome, {}, class:"form-control" %>
+        <%= form.submit 'Adicionar' , class:"btn btn-primary botao-new"%>
+    <%end%>
+</div>

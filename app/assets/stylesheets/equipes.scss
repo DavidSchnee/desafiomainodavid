@@ -1,0 +1,60 @@
+// Place all the styles related to the Equipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Show Pokemon
+.botao:visited{
+    color: white;
+}
+.show-pokemon{
+   
+    .pokemon{
+        display: flex;
+       flex-wrap: wrap;
+    }
+    div{
+       border: 1px solid black;
+       width: 250px;
+       margin-right: 2em;
+       margin-top: 2em;
+      img{
+          width: 100px;
+      }
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       a{
+           width: 12em;
+       }
+    }
+    
+}
+.botao-pokemon{
+    margin-top: 2em;
+    width: 15em;
+}
+
+// Tabela de Equipes
+
+h5{
+    font-weight: bolder;
+}
+h1{
+    font-weight: bolder;
+}
+.input-equipe{
+    width: 15em;
+}
+.form-equipe{
+    margin-top: 2em;
+}
+// New Equipe
+.botao-criar-equipe{
+    width: 12em; 
+}
+.botao-voltar{
+    margin-top: 1em;
+}
+.botao-editar-equipe{
+    width: 12em;
+    margin-top: 1em;
+}

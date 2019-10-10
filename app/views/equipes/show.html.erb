@@ -1,0 +1,22 @@
+
+
+<div class='show-pokemon'>
+ <h2>Nome da Equipe: <%= @equipe.nome %></h2>
+ <% equipe = @equipe.nome %>
+  <section class='pokemon'>
+   
+  
+  <% @equipe.pokemons.each do |pokemon|%>
+  <div>
+   <h3>Nome: <%=pokemon.nome%></h3>
+    <img src=<%=pokemon.sprite%>>
+    <h3>Tipo: <%=pokemon.tipo%></h3>
+    <%= link_to 'Excluir', pokemon, method: :delete, data: { confirm: "Você tem certeza que deseja exluir o pokemon #{pokemon.nome} " }, class:'btn btn-danger' %>
+  </div>
+  <%end%>
+ 
+  </section>
+</div>
+
+
+<%= link_to 'Voltar', equipes_path, class:'btn btn-primary botao botao-pokemon' %>

@@ -1,0 +1,13 @@
+<%= form_with(model: equipe, local: true) do |form| %>
+<%= render 'layouts/error_messages', object: form.object%>
+
+  <div class="form-group form-equipe">
+    <%= form.label :nome_da_equipe %>
+    <%= form.text_field :nome,class:'form-control input-equipe' %>
+  </div>
+
+  <div class="actions">
+  
+    <%= form.submit texto_acao, class:'btn btn-primary botao botao-criar-equipe' %>
+  </div>
+<% end %>
